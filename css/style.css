@@ -34,7 +34,8 @@ footer{
     padding-bottom:0;
 }
 
-h1, h2, h3{
+h1, h2, h3, p{
+    padding-top: 3%;
     padding-left: 9%;
     color: var(--accent-main);
 }
@@ -270,6 +271,10 @@ a figure img:hover{
     margin-right: 20%;
     padding: 2%;
     border: 0.1rem dashed var(--accent-light);
+}
+
+.blog_post article{
+    padding: 2%;
 }
 
 .blog_post h3{
