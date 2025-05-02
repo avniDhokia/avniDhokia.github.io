@@ -1,0 +1,21 @@
+/* contact form formatting */
+
+#form_inputs{
+    display: grid;
+    grid-template-areas:
+        'nameQ'
+        'name'
+        'emailQ'
+        'email'
+        'phoneQ'
+        'phone'
+        'infoQ'
+        'info'    
+    ;
+}
+
+/* who am i page formatting */
+
+#who_am_i{
+    flex-direction: column;
+}

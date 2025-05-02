@@ -1,0 +1,90 @@
+.timeline{
+    color: var(--accent-light);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left: 0.1rem dashed var(--accent-light);
+    display: grid;
+    grid-template-areas:
+        'uni'
+        'uniTitle'
+        'uniModules'
+        'aLevels'
+        'aLevelsIntro'
+        'aLevelsInfo'
+    ;    
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 1%;
+}
+
+#uni_title{
+    grid-area: uniTitle;
+    margin-left: 10%;
+}
+
+
+/* header and footer formatting */
+
+#nav, #footer_nav, #places_to_go{
+    flex-direction: column;
+}
+
+#nav{
+    text-align: right;
+}
+
+#footer_nav{
+    text-align: center;
+}
+
+#footer_nav section{
+    margin-bottom: 2%;
+}
+
+
+/* education section timeline formatting */
+
+.timeline{
+    color: var(--accent-light);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left: 0.1rem dashed var(--accent-light);
+    display: grid;
+    grid-template-areas:
+        'uni uniTitle'
+        'uniModules uniModules'
+        'aLevels aLevelsIntro'
+        'aLevelsInfo aLevelsInfo'
+    ;    
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 1%;
+}
+
+#uni_years{
+    grid-area: uni;
+}
+
+
+#uni_title{
+    grid-area: uniTitle;
+    border: none;
+}
+
+#uni_modules{
+    grid-area: uniModules;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem dashed var(--accent-light);
+}
+
+#a_level_years{
+    grid-area: aLevels;
+}
+
+#a_level_intro{
+    grid-area: aLevelsIntro;
+}
+
+#a_level_info{
+    grid-area: aLevelsInfo;
+}

@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fredericka+the+Great&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --base-color: rgb(2, 2, 14);
+    --accent-main: rgb(255, 255, 43);
+    --accent-header: rgb(255, 252, 65);
+    --accent-dark: rgb(243, 150, 0);
+    --accent-light: rgb(252, 252, 146);
+    --accent-lightest: rgb(255, 255, 179);
+    --text-color: var(--accent-light);
+
+    scrollbar-color: var(--accent-light) var(--base-color);
+}
+
+
+/* generic formatting */
+
+html{
+    font-family: 'Cabin', 'Outfit', 'Merriweather', 'Playfair Display', 'Ubuntu', serif, sans-serif;
+    color: var(--text-color);
+    background-color: var(--base-color);
+}
+
+
+article{
+    padding: 5%;
+}
+
+footer{
+    padding: 2%;
+    padding-bottom:0;
+}
+
+h1, h2, h3{
+    padding-left: 9%;
+    color: var(--accent-main);
+}
+
+#name{
+    font-family: "Outfit";
+    padding-left: 5%;
+}
+
+article{
+    font-family: 'Quicksand';
+}
+
+.page_header{
+    text-align: center;
+}
+
+strong{
+    color: var(--accent-dark)
+}
+
+h1{
+    font-size: 250%;
+}
+
+h2{
+    font-size: 150%;
+}
+
+h3{
+    font-size: 125%;
+}
+
+h1::before, h2::before{
+    content: "🐝 ";
+}
+
+img{
+    border-radius: 5%;
+}
+
+
+/* welcome formatting */
+
+#welcome{
+    text-align:center;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding: 3%;
+
+    font-size: 150%;
+
+    border: 0.25rem dashed var(--base-color);
+    background: var(--accent-header);
+    border-radius: 2rem;
+    
+}
+
+#welcome ::selection, header ::selection{
+    background-color: var(--base-color);
+    color: var(--accent-light);
+}
+
+#welcome h2{
+    color: var(--base-color);
+}
+
+#welcome ul{
+    list-style-type:none;
+}
+
+#welcome li a{
+    color: var(--base-color);
+}
+
+#welcome li a:hover{
+    color: var(--accent-dark);
+}
+
+
+/* who am i page formatting */
+
+#who_am_i{
+    display:flex;
+    margin-left:10%;
+    margin-right:10%;
+    justify-content: space-between;
+}
+
+#who_am_i h2{
+    padding-left: 0%;
+}
+
+#who_am_i img{
+    border-radius: 1rem;
+    min-width: 10rem;
+    border: 0.05rem dashed var(--accent-main);
+}
+
+#who_am_i figure{
+    max-height: 100%;
+    align-content: center;
+}
+
+
+/* education section timeline formatting */
+
+.timeline{
+    color: var(--accent-light);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left: 0.1rem dashed var(--accent-light);
+    display: grid;
+    grid-template-areas:
+        'uni uniTitle'
+        'uni uniModules'
+        'aLevels aLevelsIntro'
+        'aLevels aLevelsInfo'
+    ;    
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 1%;
+}
+
+.timeline:hover{
+    border-left: 0.1rem solid var(--accent-light);
+}
+
+#uni_years{
+    grid-area: uni;
+}
+
+
+#uni_title{
+    grid-area: uniTitle;
+    border: none;
+}
+
+#uni_modules{
+    grid-area: uniModules;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem dashed var(--accent-light);
+}
+
+#a_level_years{
+    grid-area: aLevels;
+}
+
+#a_level_intro{
+    grid-area: aLevelsIntro;
+}
+
+#a_level_info{
+    grid-area: aLevelsInfo;
+}
+
+
+
+/* projects and skills flexbox formatting */
+
+#project_flex, #skills_flex{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom:5%;
+
+    column-gap: 3rem;
+}
+
+#project_flex figure, #skills_flex figure img{
+    margin-top:10%;
+    margin: 0%;
+}
+
+#project_flex .mini_textbox, #skills_flex .mini_textbox{
+    min-width: 10%;
+}
+
+a figure img{
+    border: 0.1rem dashed var(--base-color);
+}
+
+a figure img:hover{
+    border: 0.1rem dashed var(--accent-main);
+}
+
+
+#project_flex h3, #skills_flex h3{
+    color: var(--accent-dark);
+}
+
+
+/* mini textbox formatting */
+.mini_textbox{
+    border: 0.1rem dashed var(--accent-main);
+    text-align: center;
+    padding:2%;
+    border-radius: 0.5rem;
+    flex: 2 2 10rem;
+    margin-top: 2rem;
+}
+
+.mini_textbox h3{
+    padding-bottom: 3%;
+    padding-left: 0%;
+    margin-bottom: 3%;
+    border-bottom: 0.1rem dashed var(--accent-main);
+}
+
+.mini_textbox figure{
+    margin:0%;
+}
+
+
+/* mini textbox hover formatting */
+.mini_textbox:hover{
+    border: 0.1rem solid var(--accent-light);
+    transform: translate(1%, -1%);
+}
+
+/* blog post formatting */
+.blog_post{
+    font-family: monospace;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-right: 20%;
+    padding: 2%;
+    border: 0.1rem dashed var(--accent-light);
+}
+
+.blog_post h3{
+    padding:0%;
+    padding-bottom:2%;
+    margin: 2%;
+    color: var(--accent-dark);
+    border-bottom: 0.1rem dashed var(--accent-main);
+}
+
+.blog_post p{
+    color: var(--accent-lightest);
+}
+
+.blog_post:hover{
+    border: 0.1rem solid var(--accent-light);
+    transform: translate(1%, -1%);
+}
+
+
+/* header and footer formatting */
+
+#heading, #nav, #footer_nav, #places_to_go{
+    display: flex;
+    justify-content:space-between;
+    list-style-type:none;
+}
+
+#heading{
+    margin-bottom: 5%;
+    padding: 2rem;
+    color: var(--base-color);
+}
+
+header{
+    background:var(--accent-header);
+    border-bottom: 0.3rem dashed var(--base-color);
+    color: var(--base-color);
+}
+
+header a, #name a{
+    color: black;
+}
+
+footer{
+    margin: 5%;
+    padding: 0.5rem;
+    border-bottom: 0.1rem dashed var(--accent-main);
+    border-top: 0.1rem dashed var(--accent-main);
+}
+
+#footer_nav{
+    padding-left:10%;
+    padding-right:10%;
+    justify-content:space-evenly;
+}
+
+#footer_nav section{
+    text-align: center;
+}
+
+#footer_nav section ul li h3{
+    padding-left: 0%;
+}
+
+#footer_nav section ul li{
+    list-style-type: none;
+}
+
+#footer_nav section ul{
+    padding-left: 0%;
+}
+
+#nav{
+    column-gap: 5vw;
+}
+
+#name a{
+    text-decoration: none;
+}
+
+
+
+/* link formatting */
+
+a{
+    color: var(--accent-lightest); 
+}
+
+a:hover{
+    color: var(--accent-dark);
+}
+
+
+
+
+/* contact options formatting */
+.contact_options{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* contact form formatting */
+
+form{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+legend{
+    text-align: center;
+    border: 0.15rem dashed var(--base-color);
+    background-color: var(--accent-dark);
+    color: var(--base-color);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 0.5rem;
+}
+
+legend h2{
+    color: var(--base-color);
+    font-size: 110%;
+}
+
+fieldset{
+    border: 2pt dashed var(--accent-dark);
+    border-radius: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input, textarea{
+    background-color: var(--accent-lightest);
+    margin:0.5rem;
+}
+
+
+footer input{
+    background-color: var(--accent-dark);
+    color: var(--base-color);
+    font-size: 100%;
+    padding:0.5rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+#sending_details legend{
+    color: var(--base-color);
+}
+
+#form_inputs{
+    display: grid;
+    grid-template-areas:
+        'nameQ name'
+        'emailQ email'
+        'phoneQ phone'
+        'infoQ info'    
+    ;
+}
+
+.nameQ{
+    grid-area: nameQ;
+    text-align: right;
+}
+
+.name{
+    grid-area: name;
+}
+
+.emailQ{
+    grid-area: emailQ;
+}
+
+.email{
+    grid-area: email;
+}
+
+.phoneQ{
+    grid-area: phoneQ;
+}
+
+.phone_number{
+    grid-area: phone;
+}
+
+.infoQ{
+    grid-area: infoQ;
+}
+
+.extra_information{
+    grid-area: info;
+}
+
+#form_footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+aside{
+    text-align: right;
+    padding-right: 15%;
+}
+
+.blog_post aside{
+    color: var(--accent-dark);
+}
+
+
+
+/* highlight selection */
+::selection {
+    background: var(--accent-light); 
+    color: var(--base-color);
+}
