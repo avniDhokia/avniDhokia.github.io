@@ -24,9 +24,18 @@ html{
     background-color: var(--base-color);
 }
 
+.main_body{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 
 article{
     padding: 5%;
+}
+
+article p{
+    color: var(--accent-light);
 }
 
 footer{
@@ -42,7 +51,8 @@ h1, h2, h3, p{
 
 #name{
     font-family: "Outfit";
-    padding-left: 5%;
+    padding-left: 1rem;
+    padding-top: 0;
 }
 
 article{
@@ -305,7 +315,8 @@ a figure img:hover{
 
 #heading{
     margin-bottom: 5%;
-    padding: 2rem;
+    padding: 1rem;
+    padding-left: 0.5rem;
     color: var(--base-color);
 }
 
