@@ -6,26 +6,27 @@
     <title>Avni Dhokia</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/medium.css" media="screen and (max-width: 1050px)">
+    <link rel="stylesheet" href="css/medium_screen.css" media="screen and (max-width: 1050px)">
     <link rel="stylesheet" href="css/small_screen.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="css/absurdly_small_screen.css" media="screen and (max-width: 350px)">
-</head>
+    </head>
 
 <!--header with navigation links-->
 <header id="heading">
     <h1 id="name"><a href="index.html">Avni Dhokia</a></h1>
 
+    <!--header navigation-->
     <nav>
         <ul id="nav">
+            <!--same page nav links-->
             <li><a href="#WhoAmI">About Me</a></li>
             <li><a href="#EducationAndQualifications">Education and Qualifications</a></li>
             <li><a href="#ProjectsCompetitionsAndSkills">Portfolio: Competitions, Projects and Skills</a></li>
             <li><a href="blog.html">My Blog</a></li>
-            <ul id="contacts">
-                <li><a href="mailto:av.dhokia@protonmail.com">av.dhokia@protonmail.com</a></li>
-                <li><a href="https://github.com/avniDhokia">Github</a></li>
-                <li><a href="https://uk.linkedin.com/in/avni-dhokia-b147a3276">LinkedIn</a></li>
-            </ul>
+
+            <!--contact information-->
+            <li><a href="mailto:av.dhokia@protonmail.com">av.dhokia@protonmail.com</a></li>
+            <li><a href="https://github.com/avniDhokia">Github</a></li>
+            <li><a href="https://uk.linkedin.com/in/avni-dhokia-b147a3276">LinkedIn</a></li>
         </ul>
     </nav>
 </header>
@@ -36,6 +37,7 @@
 
     <div class="main_body">
 
+        <!--about me-->
         <h1 id="WhoAmI">Who am I?</h1>
 
         <article>
@@ -45,13 +47,15 @@
         </article>
     
     
+        <!--education and qualifications-->
         <h1 id="EducationAndQualifications">Education and Qualifications</h1>
     
         <h2>Education</h2>
         <br>
     
         <article class="timeline">
-    
+            
+            <!--university-->
             <h3 id="uni_years">2024 - Now</h2>
             <p id="uni_title">
                 Currently studying <strong>Computer Science</strong> at <strong>Queen Mary University of London</strong></p>
@@ -62,42 +66,66 @@
                 </ul>
             </p>
     
-            <h3 id="a_level_years">2022 - 2024</h2>
+            <!--a levels-->
+            <h3 id="a_level_years">2022 - 2024</h3>
             <p id="a_level_intro"><strong>A-levels</strong></p>
             <ul id="a_level_info">
-                <li>Maths</li>
-                <li>Further Maths</li>
-                <li>Biology</li>
-                <li>Chemistry</li>
-            </ul>        
+                <li><strong>A*</strong> in Maths</li>
+                <li><strong>A</strong> in Further Maths</li>
+                <li><strong>A</strong> in Biology</li>
+                <li><strong>A</strong> in Chemistry</li>
+            </ul>
+
+            <!--gcses-->
+            <h3 id="gcse_years">2020 - 2022</h3>
+            <p id="gcse_intro"><strong>GCSEs</strong></p>
+            <p id="gcse_info"><strong>10 GCSEs grades 9 to 7</strong>, including Maths (9), Physics (9), English Language (8), Computer Science (8)</p>  
+
+
         </article>
     
         <br>
         <br>
     
+    
+        <!--projects, competitions and skills-->
         <h1 id="ProjectsCompetitionsAndSkills">Projects, Competitions and Skills</h1>
+
+        <!--projects-->
         <h2 id="projects">Projects</h2>
         <section id="project_flex">
+
+            <!--pythello-->
+            <article class="mini_textbox">
+                <h3>Othello GUI - <strong><a href="https://github.com/avniDhokia/pythello">pythello</a></strong></h3>
+                <p>Built a Pygame implementation of the game Othello, where users can play against the computer using a graphical interface.</p>
+            </article>
+
+            <!--smpl_cal-->
             <article class="mini_textbox">
                 <h3>Terminal Calendar Application - <strong><a href="https://github.com/avniDhokia/smpl_cal">smpl_cal</a></strong></h3>
-                <p>This is a simple command-line calendar written in <strong>Python</strong>, making use of the <strong>argparse</strong> library.</p>
+                <p>Created a command line calendar application using the Python library argparse and an Object Oriented style of programming.</p>
             </article>
     
+            <!--random shape gen-->
             <article class="mini_textbox">
                 <h3>Random Shape Generator</h3>
                 <p>This is a simple random shape generator written in <strong>Python</strong>, making use of the <strong>Turtle</strong> library.</p>
             </article>
     
 
-    
+            <!--website-->
             <article class="mini_textbox">
-                <h3><a href="index.html">Personal Website</a></h3>
+                <h3><a href="https://avnidhokia.github.io/">Personal Website</a></h3>
                 <p>I developed this website as part of my <strong>Fundamentals of Web Technology</strong> module. I enhanced my <strong>HTML</strong> and <strong>CSS</strong> skills, while developing a strong understanding of how the Web works.</p>
             </article>
         </section>
 
+        <!--competitions-->
         <h2>Competitions</h2>
         <section id="project_flex">
+
+            <!--unibots-->
             <article class="mini_textbox">
                 <h3><a href="https://unibots.uk/">Unibots</a> ~ Inter-Uni Robotics Competion</h3>
                 <p>I worked in a team to build a robot to compete in Unibots in Cambridge. I'm proud to say we achieved <strong>4th</strong> out of 13 teams!</p>
@@ -107,16 +135,16 @@
                         <img src="images/unibots.png" alt="Unibots Logo">
                         <figcaption>Unibots Logo</figcaption>
                     </figure>
-                </a>
-    
+                </a>    
             </article>
 
+            <!--ibm qmul hackathon-->
             <article class="mini_textbox">
                 <h3>IBM x QMUL Hackathon</h3>
                 <p>I worked in a multidisciplinary team of 7 to find a solution that will improve usability of IBM's SkillsBuild platform.</p>
                 <br>
-    
             </article>
+            
         </section>
     
         <h2>Work Experience</h2>
@@ -128,6 +156,7 @@
             </article>
         </section>
     
+        <!--skills-->
         <h2 id="skills">Skills</h2>
         <section id="skills_flex">
             <article class="mini_textbox">

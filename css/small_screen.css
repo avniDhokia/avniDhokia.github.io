@@ -5,9 +5,9 @@
 }
 
 
-#nav ul li{
-    margin-bottom: 1rem;
-    background-color: pink;
+#nav li{
+    margin-bottom: 0.5rem;
+    text-align: right;
 }
 
 #nav{
@@ -38,12 +38,15 @@
     border-left: 0.1rem dashed var(--accent-light);
     display: grid;
     grid-template-areas:
-        'uni'
-        'uniTitle'
-        'uniModules'
-        'aLevels'
-        'aLevelsIntro'
-        'aLevelsInfo'
+        'uni uni'
+        'uniTitle uniTitle'
+        'uniModules uniModules'
+        'aLevels aLevels'
+        'aLevelsIntro aLevelsIntro'
+        'aLevelsInfo aLevelsInfo'
+        'gcses gcses'
+        'gcseIntro gcseIntro'
+        'gcseInfo gcseInfo'
     ;    
     row-gap: 1rem;
     column-gap: 2rem;

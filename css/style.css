@@ -174,6 +174,8 @@ img{
         'uni uniModules'
         'aLevels aLevelsIntro'
         'aLevels aLevelsInfo'
+        'gcses gcseIntro'
+        'gcses gcseInfo'
     ;    
     row-gap: 2rem;
     column-gap: 2rem;
@@ -197,6 +199,7 @@ img{
 #uni_modules{
     grid-area: uniModules;
     padding-bottom: 1rem;
+    margin-left: 1rem;
     border-bottom: 0.1rem dashed var(--accent-light);
 }
 
@@ -210,7 +213,23 @@ img{
 
 #a_level_info{
     grid-area: aLevelsInfo;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    border-bottom: 0.1rem dashed var(--accent-light);
 }
+
+#gcse_years{
+    grid-area: gcses;
+}
+
+#gcse_intro{
+    grid-area: gcseIntro;
+}
+
+#gcse_info{
+    grid-area: gcseInfo;
+}
+
 
 
 
