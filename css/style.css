@@ -24,11 +24,18 @@ html{
     background-color: var(--base-color);
 }
 
+li h3{
+    color: var(--accent-lightest);
+}
+
 .main_body{
     margin-left: 25%;
     margin-right: 25%;
 }
 
+#contacts li{
+    list-style-type:none;
+}
 
 article{
     padding: 5%;
@@ -46,6 +53,7 @@ footer{
 h1, h2, h3, p{
     padding-top: 3%;
     padding-left: 9%;
+    padding-right: 9%;
     color: var(--accent-main);
 }
 
