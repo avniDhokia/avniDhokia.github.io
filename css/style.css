@@ -95,69 +95,9 @@ img{
     border-radius: 5%;
 }
 
-
-/* welcome formatting */
-
-#welcome{
-    text-align:center;
-
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
-    padding: 3%;
-
-    font-size: 150%;
-
-    border: 0.25rem dashed var(--base-color);
-    background: var(--accent-header);
-    border-radius: 2rem;
-    
-}
-
-#welcome ::selection, header ::selection{
+header ::selection{
     background-color: var(--base-color);
     color: var(--accent-light);
-}
-
-#welcome h2{
-    color: var(--base-color);
-}
-
-#welcome ul{
-    list-style-type:none;
-}
-
-#welcome li a{
-    color: var(--base-color);
-}
-
-#welcome li a:hover{
-    color: var(--accent-dark);
-}
-
-
-/* who am i page formatting */
-
-#who_am_i{
-    display:flex;
-    margin-left:10%;
-    margin-right:10%;
-    justify-content: space-between;
-}
-
-#who_am_i h2{
-    padding-left: 0%;
-}
-
-#who_am_i img{
-    border-radius: 1rem;
-    min-width: 10rem;
-    border: 0.05rem dashed var(--accent-main);
-}
-
-#who_am_i figure{
-    max-height: 100%;
-    align-content: center;
 }
 
 
@@ -231,12 +171,9 @@ img{
 }
 
 
-
-
 /* projects and skills flexbox formatting */
 
 #project_flex, #skills_flex{
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -245,8 +182,7 @@ img{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom:5%;
-
-    column-gap: 3rem;
+    column-gap: 2rem;
 }
 
 #project_flex figure, #skills_flex figure img{
@@ -282,7 +218,7 @@ a figure img:hover{
     text-align: center;
     padding:2%;
     border-radius: 0.5rem;
-    flex: 2 2 10rem;
+    flex: 2 2 15rem;
     margin-top: 2rem;
 }
 
@@ -297,6 +233,16 @@ a figure img:hover{
     margin:0%;
 }
 
+.mini_textbox p{
+    padding: 0;
+    text-align: left;
+}
+
+article{
+    padding: 0;
+    padding-left:3rem;
+}
+
 
 /* mini textbox hover formatting */
 .mini_textbox:hover{
@@ -304,21 +250,22 @@ a figure img:hover{
     transform: translate(1%, -1%);
 }
 
+
 /* blog post formatting */
 .blog_post{
     font-family: monospace;
-    margin-left: 20%;
+    margin-left: 27%;
     margin-top: 2%;
-    margin-right: 20%;
+    margin-right: 27%;
     padding: 2%;
     border: 0.1rem dashed var(--accent-light);
 }
 
 .blog_post article{
-    padding: 2%;
+    padding: 1rem;
 }
 
-.blog_post h3{
+.blog_post h2{
     padding:0%;
     padding-bottom:2%;
     margin: 2%;
@@ -328,6 +275,10 @@ a figure img:hover{
 
 .blog_post p{
     color: var(--accent-lightest);
+    font-family: monospace;
+    font-size: large;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .blog_post:hover{
