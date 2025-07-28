@@ -92,7 +92,9 @@ h1::before, h2::before{
 }
 
 img{
-    border-radius: 5%;
+    border-radius: 2.5%;
+    width:max-content;
+    object-fit: cover;
 }
 
 header ::selection{
@@ -236,6 +238,28 @@ a figure img:hover{
 .mini_textbox p{
     padding: 0;
     text-align: left;
+}
+
+.mini_textbox img{
+    object-fit: fill;
+    display: block;
+    min-width:100%;
+    transition: .5s ease;
+    opacity: 1;
+}
+
+.mini_textbox:hover img{
+    opacity: 0;
+}
+
+.mini_textbox .overlay{
+    padding: 5%;
+    position:absolute;
+    opacity: 0%;
+}
+
+.mini_textbox:hover .overlay{
+    opacity: 1;
 }
 
 article{
