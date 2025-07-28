@@ -285,6 +285,15 @@ article{
     border: 0.1rem dashed var(--accent-light);
 }
 
+aside{
+    text-align: right;
+    padding-right: 15%;
+}
+
+.blog_post aside{
+    color: var(--accent-dark);
+}
+
 .blog_post article{
     padding: 1rem;
 }
@@ -378,7 +387,6 @@ footer{
 }
 
 
-
 /* link formatting */
 
 a{
@@ -386,123 +394,6 @@ a{
 }
 
 a:hover{
-    color: var(--accent-dark);
-}
-
-
-
-
-/* contact options formatting */
-.contact_options{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
-/* contact form formatting */
-
-form{
-    margin-right: 20%;
-    margin-left: 20%;
-}
-
-legend{
-    text-align: center;
-    border: 0.15rem dashed var(--base-color);
-    background-color: var(--accent-dark);
-    color: var(--base-color);
-    padding-top: 1%;
-    padding-bottom: 1%;
-    border-radius: 0.5rem;
-}
-
-legend h2{
-    color: var(--base-color);
-    font-size: 110%;
-}
-
-fieldset{
-    border: 2pt dashed var(--accent-dark);
-    border-radius: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-input, textarea{
-    background-color: var(--accent-lightest);
-    margin:0.5rem;
-}
-
-
-footer input{
-    background-color: var(--accent-dark);
-    color: var(--base-color);
-    font-size: 100%;
-    padding:0.5rem;
-    border-radius: 1rem;
-    align-items: center;
-}
-
-#sending_details legend{
-    color: var(--base-color);
-}
-
-#form_inputs{
-    display: grid;
-    grid-template-areas:
-        'nameQ name'
-        'emailQ email'
-        'phoneQ phone'
-        'infoQ info'    
-    ;
-}
-
-.nameQ{
-    grid-area: nameQ;
-    text-align: right;
-}
-
-.name{
-    grid-area: name;
-}
-
-.emailQ{
-    grid-area: emailQ;
-}
-
-.email{
-    grid-area: email;
-}
-
-.phoneQ{
-    grid-area: phoneQ;
-}
-
-.phone_number{
-    grid-area: phone;
-}
-
-.infoQ{
-    grid-area: infoQ;
-}
-
-.extra_information{
-    grid-area: info;
-}
-
-#form_footer{
-    display: flex;
-    justify-content: center;
-}
-
-
-
-aside{
-    text-align: right;
-    padding-right: 15%;
-}
-
-.blog_post aside{
     color: var(--accent-dark);
 }
 
