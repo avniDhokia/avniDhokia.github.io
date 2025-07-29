@@ -253,8 +253,8 @@ a figure img:hover{
 }
 
 .mini_textbox .overlay{
-    padding: 5%;
-    position:absolute;
+    padding: 6%;
+    position:fixed;
     opacity: 0%;
 }
 
