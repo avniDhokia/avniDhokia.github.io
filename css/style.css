@@ -285,6 +285,16 @@ article{
     border: 0.1rem dashed var(--accent-light);
 }
 
+.blog_gallery{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.blog_gallery img{
+    max-width: 50%;
+}
+
 aside{
     text-align: right;
     padding-right: 15%;
