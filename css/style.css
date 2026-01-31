@@ -7,7 +7,7 @@
     --base-color: rgb(2, 2, 14);
     --accent-main: rgb(255, 255, 65);
     --accent-header: rgb(255, 252, 70);
-    --accent-dark: rgb(243, 150, 0);
+    --accent-dark: rgb(255, 157, 0);
     --accent-light: rgb(252, 252, 146);
     --accent-lightest: rgb(255, 255, 179);
     --text-color: var(--accent-light);
@@ -38,7 +38,7 @@ li h3{
 }
 
 article{
-    padding: 5%;
+    padding: 0%;
 }
 
 article p{
@@ -309,6 +309,7 @@ aside{
 
 .blog_post article{
     padding: 1rem;
+    padding-top: 0;
 }
 
 .blog_post h2{
